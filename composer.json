@@ -1,0 +1,31 @@
+{
+    "name": "sower/apps",
+    "description": "apps",
+    "type": "project",
+    "license": "Apache-2.0",
+    "minimum-stability": "dev",
+    "version": "1.0",
+    "authors": [
+    ],
+    "support": {
+        "issues": "https://github.com"
+    },	
+    "require": {
+	   "php": ">=7.2.0",
+	   "ext-swoole": ">=4.3",	   
+	   "sower/frame": "~1.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "sower\\apps\\": "lib/"
+        },
+        "files": [
+            "lib/common.php"
+        ]
+    },
+    "extra": {
+        "sower-config": {
+            "addon": "lib/config.php"
+        }
+    }
+}
